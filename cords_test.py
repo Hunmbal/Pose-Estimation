@@ -1,6 +1,12 @@
 import cv2
 import mediapipe as mp
 
+
+# you can use this code to experiment the mediaPipe coordinates system
+# x & y are obv the 2d screen coordinates
+# z interestingly is a relative coordinate
+# it is not the distance from the camera, but from a relative point on the body
+
 # Initialize MediaPipe Pose
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
